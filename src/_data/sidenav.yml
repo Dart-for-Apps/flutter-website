@@ -49,6 +49,14 @@
           permalink: /docs/development/ui/widgets-intro
         - title: Building layouts
           permalink: /docs/development/ui/layout
+          children:
+            - title: Layouts in Flutter
+              permalink: /docs/development/ui/layout
+              match-page-url-exactly: true
+            - title: Tutorial
+              permalink: /docs/development/ui/layout/tutorial
+            - title: Box constraints
+              permalink: /docs/development/ui/layout/box-constraints
         - title: Adding interactivity
           permalink: /docs/development/ui/interactive
         - title: Assets and images
@@ -89,6 +97,17 @@
       children:
         - title: State management
           permalink: /docs/development/data-and-backend/state-mgmt
+          children:
+            - title: Introduction
+              permalink: /docs/development/data-and-backend/state-mgmt/intro
+            - title: Think declaratively
+              permalink: /docs/development/data-and-backend/state-mgmt/declarative
+            - title: Ephemeral vs app state
+              permalink: /docs/development/data-and-backend/state-mgmt/ephemeral-vs-app
+            - title: Simple app state management
+              permalink: /docs/development/data-and-backend/state-mgmt/simple
+            - title: Options
+              permalink: /docs/development/data-and-backend/state-mgmt/options
         - title: JSON and serialization
           permalink: /docs/development/data-and-backend/json
         - title: Back-end services
@@ -151,10 +170,11 @@
     - title: Testing
       permalink: /docs/testing
       match-page-url-exactly: true
+    - title: Performance best practices
+      permalink: /docs/testing/best-practices
     - title: Performance profiling
       permalink: /docs/testing/ui-performance
-    # TODO(chalin): The following entry is not in the IA, so I'm commenting it out for now. Should it be here?
-    # We don't have this page yet, so that's fine.
+    # We don't have this page yet.
     # - title: Making your compiled app smaller
 
 - title: Deployment

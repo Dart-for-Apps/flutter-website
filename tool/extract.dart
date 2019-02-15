@@ -66,8 +66,8 @@ int _processFile(File file) {
         lastComment = lastComment.substring(1);
       }
       lastComment = lastComment.substring(0, lastComment.length - 3);
-    } else if (lines[index].contains('<?code-') || lines[index].trim().isEmpty) {
-      // Carry on. In particular, don't reset lastComment.
+    } else if (lines[index].contains('<?code-')) {
+      lastComment = 'skip';
     } else {
       lastComment = null;
     }
